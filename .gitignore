@@ -1,0 +1,15 @@
+.DS_Store
+.python-version
+*.java
+*.scala
+*.pdf
+__pycache__/
+.vscode/
+.mypy_cache
+*.kt
+*.js
+*.rb
+*.hs
+.idea/
+*.cs
+*.rs
