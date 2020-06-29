@@ -38,6 +38,7 @@ class PhoneBook:
                 chain.pop(i)
                 break
         chain.append(Record(phone, name))
+        self.n += 1
 
         if self.load_factor > 1:
             self.m = 2 * self.m
@@ -57,6 +58,7 @@ class PhoneBook:
         for i in range(len(chain)):
             if chain[i].phone == phone:
                 chain.pop(i)
+                self.n -= 1
                 break
 
     def find(self, phone):
