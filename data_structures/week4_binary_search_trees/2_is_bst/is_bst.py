@@ -23,9 +23,14 @@ def is_binary_search_tree(tree):
 
 
 def traverse_in_order(tree):
-    def key(index): return tree[index][0]
-    def left(index): return tree[index][1]
-    def right(index): return tree[index][2]
+    def key(index):
+        return tree[index][0]
+
+    def left(index):
+        return tree[index][1]
+
+    def right(index):
+        return tree[index][2]
 
     stack = []
     i = 0
